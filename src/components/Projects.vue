@@ -1,59 +1,30 @@
-<template>
-    <section class="portfolio py-5" id='projects'>
+<template> 
+<div class="services py-5" id="projects">
     <div class="container-lg py-4">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-title text-center">
-            <h2 class='fw-bold mb-5'>Works</h2>
+            <h2 class='fw-bold mb-5'>Projects</h2>
           </div>
         </div>
-      </div>    
-      <div class="row">
-        <div class="col-md-6 col-lg-4" v-if="projects">
-          <div class="portfolio-item" v-for="project of projects" :key="project.id">
-            <img :src="project.img_url" class='w-100 img-thumbnail' alt="portfolio-item">
-            <h3 class='text-capitalize fs-5 my-2'>{{ project.title }}</h3>
-            <p class='mb-5'><a href="#" class='text-danger text-decoration-none'>Live demo</a></p>
-          </div>
-        </div>
-        <!-- <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <img src="https://i.postimg.cc/KvsrCG0q/2.jpg" class='w-100 img-thumbnail' alt="portfolio-item">
-            <h3 class='text-capitalize fs-5 my-2'>app landing page</h3>
-            <p class='mb-5'><a href="#" class='text-danger text-decoration-none'>Live demo</a></p>
-          </div>
-        </div> -->
-        <!-- <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <img src="https://i.postimg.cc/yN0mJFst/3.jpg" class='w-100 img-thumbnail' alt="portfolio-item">
-            <h3 class='text-capitalize fs-5 my-2'>creative team section</h3>
-            <p class='mb-5'><a href="#" class='text-danger text-decoration-none'>Live demo</a></p>
-          </div>
-        </div> -->
-        <!-- <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <img src="https://i.postimg.cc/TYPJkLJ5/4.jpg" class='w-100 img-thumbnail' alt="portfolio-item">
-            <h3 class='text-capitalize fs-5 my-2'>toggle pricing table</h3>
-            <p class='mb-5'><a href="#" class='text-danger text-decoration-none'>Live demo</a></p>
-          </div>
-        </div> -->
-        <!-- <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <img src="https://i.postimg.cc/Nj38fNqR/5.jpg" class='w-100 img-thumbnail' alt="portfolio-item">
-            <h3 class='text-capitalize fs-5 my-2'>bootstrap 5 image gallery</h3>
-            <p class='mb-5'><a href="#" class='text-danger text-decoration-none'>Live demo</a></p>
-          </div>
-        </div>     -->
-        <!-- <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item">
-            <img src="https://i.postimg.cc/SsqWcJKs/6.jpg" class='w-100 img-thumbnail' alt="portfolio-item">
-            <h3 class='text-capitalize fs-5 my-2'>filterable image gallery</h3>
-            <p class='mb-5'><a href="#" class='text-danger text-decoration-none'>Live demo</a></p>
-          </div>
-        </div>                             -->
+      </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" v-if="projects">
+    <div class="card" v-for="project of projects" :key="project.id">
+      <img :src="project.img_url" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ project.title }}</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
-  </section>
+  </div>
+  </div>
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+  </div>
+  </div>
 </template>
 
 <script>
@@ -78,6 +49,6 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 </style>

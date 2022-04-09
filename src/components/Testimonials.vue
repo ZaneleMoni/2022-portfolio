@@ -1,5 +1,5 @@
 <template>
- <div class="services py-5" id="services">
+ <div class="services py-5" id="testimonials">
     <div class="container-lg py-4">
       <div class="row justify-content-center">
         <div class="col-lg-8">
@@ -39,7 +39,6 @@ export default {
       .then((response) => response.json())
       .then((data) => (this.testimonials = data))
       .catch((err) => console.log(err.message));
-    console.log(testimonials);
   },
   name: "testimonials",
   components: {
@@ -49,6 +48,10 @@ export default {
 </script>
 
 
-<style>
-
+<style scoped>
+.col {
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-align: center;
+}
 </style>
