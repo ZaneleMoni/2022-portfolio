@@ -18,6 +18,9 @@
       </div>
     </div>
   </section>
+    <div class="container">
+    <hr>
+  </div>
 </template>
 
 <script>
@@ -28,7 +31,8 @@ export default {
 
 <style scoped>
 img{
-  height: 450px;
+  height: auto;
   width: 550px;
+  object-fit: cover;
 }
 </style>

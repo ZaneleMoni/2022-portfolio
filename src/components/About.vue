@@ -72,6 +72,9 @@
       </div>
     </div>
   </section>
+  <div class="container">
+    <hr>
+  </div>
 </template>
 
 <script>
@@ -81,5 +84,7 @@ export default {
 </script>
 
 <style>
-
+section{
+  height: 100vh;
+}
 </style>

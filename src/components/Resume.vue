@@ -1,5 +1,5 @@
 <template>
-<div class="container" id="resume">
+<div class="container conttt" id="resume">
     <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-title text-center">
@@ -43,6 +43,9 @@
       </div>
    </div>
 </div>
+  <div class="container">
+    <hr>
+  </div>
 </template>
 
 <script>
@@ -53,7 +56,7 @@ export default {
 
 <style scoped>
 
-.container {
+.conttt {
    width: 80%;
    padding: 50px 0;
    margin: 50px auto;

@@ -1,6 +1,6 @@
 <template>
  <div class="services py-5" id="testimonials">
-    <div class="container-lg py-4">
+    <div class="container py-4">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-title text-center">
@@ -11,7 +11,7 @@
       <div class="row text-center" v-if="testimonials">
         <div class="col-md-6 col-lg-4 mb-4" v-for="testimonial of testimonials"
           :key="testimonial.id">
-     <img :src="testimonial.img" class="rounded-circle" width="80"> 
+     <img :src="testimonial.img" class="rounded-circle"> 
     
           
             <h3>{{ testimonial.fname }} {{ testimonial.lname }}</h3>
@@ -21,7 +21,9 @@
         </div>
       </div>
     </div>
-
+  <div class="container">
+    <hr>
+  </div>
 </template>
 
 <script>
@@ -53,5 +55,10 @@ export default {
     margin-top: 0;
     margin-bottom: 60px;
     text-align: center;
+}
+img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
 </style>
