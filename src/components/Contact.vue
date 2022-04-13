@@ -34,7 +34,7 @@
           </div>
           <div class="text ms-3">
             <h3 class='fs-5'>Address</h3>
-            <p classs='text-muted m-0'>South Afrcia,Cape Town</p>
+            <p classs='text-muted m-0'>South Africa,Cape Town</p>
           </div>
         </div>                           
       </div>
@@ -95,34 +95,29 @@ export default {
     return {
       name: "",
       email: "",
+      subject: "",
       message: "",
     };
   },
-  methods: {
-    handleSubmit() {
-      console.log(this.name, this.email, this.message);
-      this.name = "";
-      this.email = "";
-      this.message = "";
-
-      fetch("https://portfolio-project-testimonial.herokuapp.com/contact", {
-        method: "POST",
-        body: JSON.stringify({
-          name: this.name,
-          email: this.email,
-          message: this.message,
-        }),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        },
-      })
-        .then((response) => response.json())
-        .then((json) => {
-          
-        })
-        .catch((e) => alert(e.msg));
+    methods: {
+      handleSubmit() {
+  fetch('https://my-blogyy.herokuapp.com/contacts', {
+    method: 'POST',
+    body: JSON.stringify({
+      name: this.name,
+      email: this.email,
+      subject: this.subject,
+      message: this.message,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
     },
-  },
+  })
+    .then((response) => response.json())
+    .then((data) =>(this.contact = data));
+    alert("Message successfully sent").catch((err)=> console.log(err.message));
+      },
+    },
 };
 </script>
 
