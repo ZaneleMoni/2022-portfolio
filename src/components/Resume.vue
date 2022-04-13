@@ -39,7 +39,7 @@
       <div class="timeline-content">
          <h3>September 2021-March2022</h3>
          <span>Life Choices</span>
-         <p>I recently finished my 6 months coding course at Life Choices</p>
+         <p>I recently finished my 6 months Full Stack development course at Life Choices</p>
       </div>
    </div>
 </div>
@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 
-.conttt {
+.container {
    width: 80%;
    padding: 50px 0;
    margin: 50px auto;

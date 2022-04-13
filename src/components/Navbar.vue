@@ -8,25 +8,23 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active text-dark" aria-current="home" href="#home">Home</a>
+            <a class="nav-link active " aria-current="home" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#about">About</a>
+            <a class="nav-link " href="#about">About</a>
           </li>
-           <li class="nav-item">
-            <a class="nav-link text-dark" href="#about">Skills</a>
+          
+          <li class="nav-item">
+            <a class="nav-link " href="#resume">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#resume">Resume</a>
+            <a class="nav-link " href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#projects">Projects</a>
+            <a class="nav-link " href="#testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="#testimonials">Testimonials</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="#contact">Contact</a>
+            <a class="nav-link " href="#contact">Contact</a>
           </li>                
         </ul>
       </div>
@@ -41,5 +39,6 @@ export default {
 </script>
 
 <style>
+
 
 </style>
