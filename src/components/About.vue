@@ -141,4 +141,9 @@ export default {};
 section {
   height: 100vh;
 }
+@media screen and (max-width: 768px){
+section{
+  height: auto;
+}
+}
 </style>
