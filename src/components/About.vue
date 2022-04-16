@@ -41,6 +41,7 @@
                   class="text-dark me-2"
                  target="_blank" ><i class="fab fa-linkedin-in"></i
                 ></a>
+                <a href="" download="Ntombizanele_CV" class='btn btn-danger me-5 px-3'>Download CV</a>
               </div>
             </div>
           </div>
